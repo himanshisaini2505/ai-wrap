@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanju Vashist</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="dark-theme">
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile-card">
+                <div class="avatar-container">
+                    <img src="images/logo.png" alt="Profile Picture" class="avatar">
+                </div>
+                <div class="profile-info">
+                    <h1>sanju sharma </h1>
+                    <p class="job-title">App developer</p>
+                </div>
+
+                <!-- ye dubara phone khater h  -->
+                <div class="mobile-header">
+                    <div class="mobile-avatar">
+                        <img src="images/logo.png" alt="Profile Picture">
+                    </div>
+                    <div class="mobile-info">
+                        <h1>sanju sharma </h1>
+                        <p class="job-title">app developer</p>
+                    </div>
+                </div>
+
+                <button class="show-contacts">Show Contacts</button>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span class="label">EMAIL</span>
+                        <div class="value">
+                            <i class="fas fa-envelope"></i>
+                            sanjuvashist221@gmail.com
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="label">PHONE</span>
+                        <div class="value">
+                            <i class="fas fa-phone"></i>
+                            +91 85720-69441
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="label">BIRTHDAY</span>
+                        <div class="value">
+                            <i class="fas fa-calendar"></i>
+                            June 13, 3005
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="label">LOCATION</span>
+                        <div class="value">
+                            <i class="fas fa-location-dot"></i>
+                            Jind, Haryana , Bharat.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                     <a href="https://www.instagram.com/sanju_vashist22/profilecard/?igsh=aXd1aXRvZ3JwNDRy"target="_blank"  class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/sanju-vashist" target="_blank" class="social-link"><i class="fab fa-github"></i> </a>
+                    <a href="https://www.linkedin.com/in/sanju-vashist-18954b328" class="social-link"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Experience</a></li>
+                    <li><a href="#technical-skills">Skills</a></li>
+                    <li><a href="#get-in-touch">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </nav>
+
+            <div class="container-ai">
+                <button id="micButton">
+                    <i class="fas fa-microphone"></i>
+                </button>
+                <button id="stopButton">
+                    <i class="fas fa-stop"></i>
+                </button>
+            </div>
+            <div id="overlay"></div>
+            <div id="popup">
+                <div id="transcript"></div>
+                <div id="response"></div>
+            </div>
+
+            <section id="about">
+                <h2>About Me</h2>
+                <div class="section-content">
+                    <p>I am Sanju, a 2nd-year BTech Computer Engineering student at Maharishi Markandeshwar University (MMU), Mullana, Ambala. I often contribute to projects on GitHub and am passionate about creating innovative and unconventional solutions.</p>
+                    <p> I am a frontend web developer and a  app developer with strong skills in Flutter, Python, Firebase, Supabase, ReactNative,FastAPI and web development basics!</p>
+                </div>
+
+                <h2 id="services">General Purpose AI</h2>
+<div class="services-grid">
+    <div class="service-card" onclick="location.href='https://chat.openai.com'" style="cursor: pointer;">
+        <div class="service-icon">
+            <i class="fas fa-code gold-icon"></i>
+        </div>
+        <div class="service-content">
+            <h3>Open AI</h3>
+            <a href="https://chat.openai.com">link</a>
+        </div>
+    </div>
+    <div class="service-card" onclick="location.href='https://www.anthropic.com/index/claude'" style="cursor: pointer;">
+        <div class="service-icon">
+            <i class="fas fa-cloud gold-icon"></i>
+        </div>
+        <div class="service-content">
+            <h3>Claude</h3>
+            <a href="https://www.anthropic.com/index/claude">link</a>
+        </div>
+    </div>
+</div>
+
+<h2 id="services">Image Generation</h2>
+<div class="services-grid">
+    <div class="service-card" onclick="location.href='https://www.midjourney.com'" style="cursor: pointer;">
+        <div class="service-icon">
+            <i class="fas fa-image gold-icon"></i>
+        </div>
+        <div class="service-content">
+            <h3>MidJourney</h3>
+            <a href="https://www.midjourney.com">link</a>
+        </div>
+    </div>
+    <div class="service-card" onclick="location.href='https://runwayml.com'" style="cursor: pointer;">
+        <div class="service-icon">
+            <i class="fas fa-paint-brush gold-icon"></i>
+        </div>
+        <div class="service-content">
+            <h3>Runway ML</h3>
+            <a href="https://runwayml.com">link</a>
+        </div>
+    </div>
+</div>
+
+<h2 id="services">Video Generation & Editing</h2>
+<div class="services-grid">
+    <div class="service-card" onclick="location.href='https://www.synthesia.io'" style="cursor: pointer;">
+        <div class="service-icon">
+            <i class="fas fa-video gold-icon"></i>
+        </div>
+        <div class="service-content">
+            <h3>Synthesia</h3>
+            <a href="https://www.synthesia.io">link</a>
+        </div>
+    </div>
+    <div class="service-card" onclick="location.href='https://www.pictory.ai/'" style="cursor: pointer;">
+        <div class="service-icon">
+            <i class="fas fa-film gold-icon"></i>
+        </div>
+        <div class="service-content">
+            <h3>Pictory</h3>
+            <a href="https://www.pictory.ai/">link</a>
+        </div>
+    </div>
+</div>
+
+<h2 id="services">Speech and Voice AI</h2>
+<div class="services-grid">
+    <div class="service-card" onclick="location.href='https://elevenlabs.io'" style="cursor: pointer;">
+        <div class="service-icon">
+            <i class="fas fa-microphone gold-icon"></i>
+        </div>
+        <div class="service-content">
+            <h3>ElevenLabs</h3>
+            <a href="https://elevenlabs.io">link</a>
+        </div>
+    </div>
+    <div class="service-card" onclick="location.href='https://www.descript.com/'" style="cursor: pointer;">
+        <div class="service-icon">
+            <i class="fas fa-headphones gold-icon"></i>
+        </div>
+        <div class="service-content">
+            <h3>Descript</h3>
+            <a href="https://www.descript.com/">link</a>
+        </div>
+    </div>
+</div>
+
+<h2 id="services">AI for Data Analysis</h2>
+<div class="services-grid">
+    <div class="service-card" onclick="location.href='https://bigml.com'" style="cursor: pointer;">
+        <div class="service-icon">
+            <i class="fas fa-chart-line gold-icon"></i>
+        </div>
+        <div class="service-content">
+            <h3>BigML</h3>
+            <a href="https://bigml.com">link</a>
+        </div>
+    </div>
+    <div class="service-card" onclick="location.href='https://h2o.ai/'" style="cursor: pointer;">
+        <div class="service-icon">
+            <i class="fas fa-database gold-icon"></i>
+        </div>
+        <div class="service-content">
+            <h3>H2O.ai</h3>
+            <a href="https://h2o.ai/">link</a>
+        </div>
+    </div>
+</div>
+
+
+            <section id="get-in-touch" class="get-in-touch">
+                <h2>Get in Touch</h2>
+                <p>If you have any questions, ideas, or just want to say hi, feel free to reach out!</p>
+                <blockquote>"Connecting is the beginning of every great story."</blockquote>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/sanju_vashist22/profilecard/?igsh=aXd1aXRvZ3JwNDRy"target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/sanju-vashist" class="social-link" target="_blank"><i class="fab fa-github"></i> </a>
+                    <a href="https://www.linkedin.com/in/sanju-vashist-18954b328" class="social-link"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </section>
+
+
+        </main>
+    </div>
+    <script src="script.js"></script>
+    <script src="config.js"></script>
+</body>
+
+</html>
