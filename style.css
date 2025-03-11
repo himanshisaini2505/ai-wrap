@@ -210,6 +210,12 @@ body {
   color: var(--accent-gold);
 }
 
+a{
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
 .nav-links a:hover {
   color: var(--accent-gold);
 }
